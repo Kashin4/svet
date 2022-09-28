@@ -1,0 +1,142 @@
+.toggler {
+  z-index: 11;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  cursor: pointer;
+  opacity: 0;
+  display: none;
+}
+.hamburger {
+  position: absolute;
+  top: 26px;
+  right: 18px;
+  height: 40px;
+  width: 40px;
+  padding: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  display: none;
+}
+
+/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+
+.hamburger > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: black;
+  height: 1px;
+  width: 20px;
+  transition: all 0.4s ease;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+.hamburger > div::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  background: black;
+  width: 26px;
+  height: 1px;
+  transition: all 0.4s ease;
+}
+.hamburger > div::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  background: black;
+  width: 13px;
+  height: 1px;
+  transition: all 0.4s ease;
+}
+.hamburger > div::after {
+  top: 6px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.toggler:checked + .hamburger > div {
+  background: rgba(0, 0, 0, 0);
+}
+
+.toggler:checked + .hamburger > div::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: black;
+  width: 100%;
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(135deg);
+  background: black;
+  width: 100%;
+}
+
+/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+.menu {
+  background: white;
+  width: 0%;
+  height: 240px;
+display: none;
+  /* APPLYING TRANSITION TO THE MENU :  */
+
+  transition: all 0.4s ease;
+}
+
+/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+.toggler:checked ~ .menu {
+  width: 37%;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+
+/* STYLING THE LIST :  */
+
+.menu > div > ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  padding-left: 10px;
+
+  /* HIDDEN INITIALLY  :  */
+
+  visibility: hidden;
+}
+
+.menu > div > ul > li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.menu > div > ul > li > a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Gilroy-Medium";
+}
+
+/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+.toggler:checked ~ .menu > div > ul {
+  transition: visibility 0.4s ease;
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+
+.toggler:checked ~ .menu > div > ul > li > a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

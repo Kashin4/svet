@@ -1,0 +1,117 @@
+.swiper__partner {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.slide-nav__partner {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: auto;
+}
+
+.swiper-pagination__partner {
+  width: 20% !important;
+}
+
+//================= Наши партнеры
+.content__our-partners {
+  max-width: 1460px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.our-partners__title {
+    text-align: center;
+    padding-top: 164px;
+    width: 369px;
+    margin: 0 auto;
+}
+
+
+.partners__wrapper {
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 54px;
+  width: 2065px;
+  align-items: center;
+}
+.partner {
+  display: flex;
+}
+.patner-image {
+  margin-right: 141px;
+}
+
+
+
+.swiper-button-next2,
+.swiper-button-prev2 {
+  width: 33px;
+  height: 18px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+.swiper-button-next2 {
+  background: url(../assets/images/Arrow-right.png) no-repeat;
+}
+.swiper-button-prev2 {
+  background: url(../assets/images/Arrow-left.png) no-repeat;
+}
+
+.swiper-button-next2:hover {
+  background: url(../assets/images/Arrow-right_hover.png) no-repeat;
+}
+
+.swiper-button-prev2:hover {
+  background: url(../assets/images/Arrow-left_hover.png) no-repeat;
+}
+
+.swiper-button-next2.swiper-button-disabled,
+.swiper-button-prev2.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next2.swiper-button-hidden,
+.swiper-button-prev2.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-next2,
+.swiper-navigation-disabled .swiper-button-prev2 {
+  display: none !important;
+}
+
+.swiper-button-next2:after,
+.swiper-button-prev2:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev2,
+.swiper-rtl .swiper-button-next2 {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-next2,
+.swiper-rtl .swiper-button-prev2 {
+  right: 10px;
+  left: auto;
+}

@@ -1,0 +1,125 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 999;
+}
+
+.popup__bg.active {
+  // При добавлении класса 'active'
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  background: #fff;
+  width: 522px;
+  height: 549px;
+  padding: 25px 72px;
+  transition: 0.5s all;
+}
+
+.popup.active {
+  // При добавлении класса 'active'
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.5s all;
+}
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 32px;
+}
+
+.popup label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.popup .label__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfd0d3;
+  margin-bottom: 5px;
+}
+.popup-theme {
+  margin: 0 auto;
+  width: 246px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 66px;
+  color: #26497e;
+  margin-top: 45px;
+  margin-bottom: 32px;
+}
+.popup-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 48px;
+}
+.popup input {
+  width: 393px;
+  height: 71px;
+  font-size: 18px;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+  background: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 70px;
+  padding-left: 40px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.popup textarea:focus + .label__text {
+  color: #2982ff;
+}
+
+.popup button {
+  width: 346px;
+  height: 80px;
+  background: linear-gradient(180deg, #ff7144 0%, #fdce26 100%);
+  box-shadow: 0px 4px 30px #fc9e4a;
+  border-radius: 70px;
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3a3a3a;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.pop-button {
+  margin: 0 auto;
+  top: 0;
+  left: 10px;
+}

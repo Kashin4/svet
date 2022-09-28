@@ -1,0 +1,41 @@
+$bg-g: #f7f7f7;
+$bg-w: #fff;
+
+.container-header {
+  height: 152px;
+  background-color: $bg-g;
+  margin: 0 auto;
+}
+
+.container__slaider-top {
+  margin: 0 auto;
+  height: 684px;
+  background-color: $bg-g;
+}
+.container__why-we {
+  margin: 0 auto;
+  height: 580px;
+  background-color: $bg-w;
+}
+.container__about-shop {
+  margin: 0 auto;
+  height: 676px;
+  background-color: $bg-w;
+}
+.container__instagram {
+  margin: 0 auto;
+  height: 785px;
+  background-color: $bg-g;
+   position: relative;
+}
+.container__our-partners {
+  margin: 0 auto;
+  height: 709px;
+  background-color: $bg-w;
+}
+
+.container-footer {
+  margin: 0 auto;
+  height: 680px;
+  background-color: $bg-g;
+}

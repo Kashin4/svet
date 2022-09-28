@@ -1,0 +1,112 @@
+.swiper__instagram {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.slide-nav__instagram {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.swiper-pagination__instagram {
+  width: 20% !important;
+}
+
+.slide-instagram {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 30px;
+}
+//================= Мы в Инстаграм
+.content__instagram {
+  max-width: 1460px;
+  margin: 0 auto;
+  position: relative;
+}
+.instagram__title {
+  text-align: center;
+  padding-top: 78px;
+  width: 344px;
+  margin: 0 auto;
+}
+.instagram__cards {
+  color: #222222;
+}
+
+.group__1 {
+  background: url(../assets/images/Group1.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 175px;
+  position: absolute;
+  bottom: 204px;
+  left: 96px;
+}
+.group__2 {
+  background: url(../assets/images/Group2.png);
+  background-repeat: no-repeat;
+  width: 203px;
+  height: 271px;
+  right: 0;
+  position: absolute;
+  top: -26px;
+}
+
+.button-instagram {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 346px;
+}
+
+.hover {
+  z-index: 10;
+  position: absolute;
+  opacity: 0;
+  padding: 120px 171px 122px 178px;
+  background-color: #a89bf352;
+  border-radius: 2%;
+}
+
+.hover:hover {
+  opacity: 1;
+}
+
+.image-instagramm {
+  opacity: 1;
+}
+
+.image-instagramm:hover ~ .hover {
+  opacity: 1;
+  padding: 120px 171px 122px 178px;
+  background-color: #ffffff52;
+  border-radius: 2%;
+}
+
+.button-instagram__text {
+ 
+  top: 27px;
+  left: 74px;
+  text-transform: initial;
+}
+
+.button-instagram__text:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-instagram {
+  padding: 0px 174px 69px;
+}
+.slide-link__instagram {
+  display: contents;
+  background-color: #fc9e4a;
+}

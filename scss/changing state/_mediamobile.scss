@@ -1,0 +1,328 @@
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  header {
+    height: 109px;
+  }
+  .content__header {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .container-header {
+    height: 70px;
+  }
+  .content__header {
+    height: 65px;
+  }
+  .navigation {
+    display: none;
+  }
+  .phone {
+    max-width: 154px;
+    margin-left: 53px;
+    margin-top: 29px;
+  }
+  .toggler {
+    z-index: 11;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 24px;
+    right: 14px;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
+  }
+  .hamburger {
+    position: absolute;
+    top: 26px;
+    right: 18px;
+    height: 40px;
+    width: 40px;
+    padding: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: flex;
+  }
+  .menu {
+    background: white;
+    width: 0%;
+    height: 240px;
+    transition: all 0.4s ease;
+    display: block;
+  }
+  .menu > div > ul {
+    position: absolute;
+}
+
+  // ===================================================
+  .container__slaider-top {
+    height: 551px;
+  }
+  .content__slaider-top {
+    max-width: 360px;
+  }
+
+  .swiper-slide {
+    height: 453px;
+  }
+
+  .slide-theme {
+    line-height: 28px;
+    font-size: 22px;
+    text-align: left;
+    width: 298px;
+    letter-spacing: 0.7px;
+    margin-left: 4px;
+  }
+  .slide-three .slide-theme {
+    margin-bottom: 10px;
+  }
+
+  .block-left {
+    height: 126px;
+  }
+  .slide-text {
+    font-size: 13px;
+    text-align: left;
+    line-height: 17px;
+  }
+
+  .block-right img {
+    width: 230px;
+  }
+  .block-right {
+    width: 234px;
+    height: 187px;
+    margin-top: 15px;
+    margin-left: 23px;
+  }
+
+  .btnsl {
+    top: 377px;
+    left: 21px;
+  }
+  .button-book {
+    top: 25px;
+    left: 176px;
+    width: 45px;
+  }
+  .slide-nav {
+    width: 123px;
+    margin-top: 30px;
+    margin-left: 18px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: 55%;
+  }
+  // ==========================================
+  .content__why-we {
+    max-width: 360px;
+  }
+  .why-we__title {
+    font-size: 24px;
+    width: 228px;
+    padding-top: 60px;
+    text-align: center;
+    line-height: 29px;
+  }
+  .our__plus {
+    margin-top: 65.44px;
+    width: 360px;
+    height: 807px;
+  }
+
+  .our__plus div p {
+    margin-top: 83px;
+  }
+  .two__plus {
+    margin-bottom: 10px;
+  }
+  .three__plus {
+    margin-bottom: 30px;
+  }
+  .content__about-shop {
+    width: 360px;
+  }
+  // =========================================================
+  .about-shop__title {
+    width: 134px;
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 19px;
+  }
+  .about-shop__wrapper {
+    width: 340px;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  .about-shop__wrapper .text__svetoch {
+    font-size: 14px;
+    width: 330px;
+    margin-top: 36px;
+    text-align: left;
+    line-height: 17px;
+  }
+  .about-shop__wrapper .text__svetoch-color {
+    margin-top: 13px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .container__about-shop {
+    height: 711px;
+  }
+  .about-shop__wrapper .about-shop__image {
+    width: 354px;
+    height: 264px;
+    margin-top: 18px;
+  }
+
+  // =========================================
+  .content__instagram {
+    max-width: 360px;
+    height: 918px;
+  }
+  .content__instagram {
+    max-width: 360px;
+    height: 1062px;
+  }
+  .group__1 {
+    bottom: 88px;
+    left: 0px;
+  }
+  .instagram__title {
+    font-size: 22px;
+    width: 175px;
+    padding-top: 32px;
+  }
+
+  .slide-instagram {
+    margin-left: 16px;
+    height: 330px !important;
+    width: 320px;
+    margin-top: -2px;
+  }
+  .slide-nav__instagram {
+    width: 27%;
+    margin-left: 131px;
+    position: absolute;
+    bottom: 8px;
+  }
+  .button-instagram {
+    width: 220px;
+    margin-left: 68px;
+    margin-top: 7px;
+  }
+  .blob-btn {
+    text-transform: inherit;
+  }
+  // ==================================================================
+  .container__our-partners {
+    height: 502px;
+  }
+  .content__our-partners {
+    width: 359px;
+  }
+  .our-partners__title {
+    padding-top: 46px;
+    font-size: 24px;
+    width: 186px;
+  }
+
+  .swiper__partner {
+    height: 264px;
+    width: 360px;
+  }
+  .slide-partner {
+    height: 250px;
+    justify-content: space-between;
+}
+  .slide-nav__partner {
+    margin: 0 auto;
+    margin-top: 59px;
+    width: 160px;
+    justify-content: space-between;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    width: 10px;
+    height: 15px;
+    font-size: 14px;
+  }
+  .swiper-pagination__partner {
+    width: 36% !important;
+  }
+
+  // =======================================
+  .container-footer {
+    height: 676px;
+  }
+  .content-footer {
+    max-width: 360px;
+  }
+
+  .footer__wrapper {
+    width: 360px;
+  }
+  .footer__title {
+    padding-top: 25px;
+    padding-left: 0px;
+    margin: 0 auto;
+    width: 108px;
+    letter-spacing: 0.9px;
+    font-size: 23px;
+  }
+  .contacts {
+    max-width: 360px;
+    font-size: 17px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    padding-top: 33px;
+    padding-left: 19px;
+    height: 316px;
+  }
+  .contact__adres {
+    order: 1;
+    font-size: 15px;
+  }
+  .contact__time-work {
+    order: 1;
+  }
+  .contacts .icon__phone {
+    width: 21.5px;
+    padding-right: 4px;
+    margin-top: 0px;
+    margin-right: 7px;
+  }
+  .contact__phones {
+    order: 2;
+    width: 200px;
+    margin-bottom: 0px;
+    height: 79px;
+    font-size: 17px;
+  }
+  .contact__mail {
+    order: 3;
+  }
+
+  .map {
+    width: 322px;
+    margin: 0 auto;
+    margin-top: 17px;
+    height: 173px;
+    border: 4px solid #fdb32f;
+  }
+  .map iframe {
+    width: 314px;
+    height: 164px;
+  }
+}

@@ -1,0 +1,89 @@
+//================= Почему попокупатели выбирают нас
+.content__why-we {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.why-we__title {
+  text-align: center;
+  padding-top: 129px;
+}
+.our__plus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our__plus {
+  margin-top: 106.44px;
+  max-width: 100%;
+  div {
+    position: relative;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #222222;
+
+    p {
+      position: absolute;
+      margin: 0;
+      margin-top: 112px;
+    }
+  }
+}
+
+.one__plus {
+  background: url(../assets/images/we1.svg) no-repeat;
+  background-position: top center;
+  height: 164.56px;
+  width: 300px;
+}
+.two__plus {
+  background: url(../assets/images/we2.svg) no-repeat;
+  background-position: top center;
+  height: 164.56px;
+  width: 239px;
+}
+.three__plus {
+  background: url(../assets/images/we3.svg) no-repeat;
+  background-position: top center;
+  height: 164.56px;
+  width: 249px;
+}
+.four__plus {
+  background: url(../assets/images/we4.svg) no-repeat;
+  background-position: top center;
+  height: 164.56px;
+  width: 291px;
+}
+//================= О Магазине
+.content__about-shop {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.about-shop__title {
+  text-align: center;
+}
+.about-shop__wrapper {
+  display: flex;
+  align-content: center;
+  max-width: 1474px;
+  justify-content: space-between;
+  align-items: flex-end;
+  .text__svetoch {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 24px;
+    color: #515151;
+    max-width: 776px;
+  }
+  .text__svetoch-color {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 24px;
+    color: #26497e;
+  }
+  .about-shop__image {
+    width: 600px;
+    height: 463px;
+  }
+}
